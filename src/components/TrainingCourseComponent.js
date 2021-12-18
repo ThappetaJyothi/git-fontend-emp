@@ -189,8 +189,8 @@ const TrainingCourseComponent = () => {
                                                     <td>{tc.courseDurationn}</td>
                                                     <td>{tc.courseStatus}</td>
                                                     <td>{tc.startingDate}</td>
-                                                    <td>{tc.endingDate}</td> <td><a href="#edit" className="btn btn-primary">Edit</a></td>
-                                                    <td><a href="#delete" className="btn btn-danger">delete</a></td>
+                                                    <td>{tc.endingDate}</td> 
+                                                    
                                                 </tr>
                                             )
                                         })}
