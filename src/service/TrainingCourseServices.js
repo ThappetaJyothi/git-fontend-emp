@@ -9,9 +9,9 @@ const getAllCoursesService = () => {
     console.log(`get Courses ByService`);
     return axios.get(`/viewallcourses`);
 }
-const deleteCourseByIdService=(cid)=>{
+const deleteCourseByIdService=(cid1)=>{
     console.log("delete in service");
-    return axios.delete(`/deletecourse/${cid}`);
+    return axios.delete(`/deletecourse/${cid1}`);
 }
 const courseByNameService=(cName)=>{
     console.log("name in service");

@@ -7,7 +7,7 @@ console.log('store');
 const store = configureStore(
     {
         reducer: {
-            scheme: schemeReducer,
+           // scheme: schemeReducer,
             trainingcourse:trainingcourseReducer,
             
         }

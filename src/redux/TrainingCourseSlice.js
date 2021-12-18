@@ -7,6 +7,7 @@ const TrainingCourseSlice = createSlice({
     initialState: {
 
         trainingcourseState: new TrainingCourseModel(),
+        trainingcourse1State: new TrainingCourseModel(),
         trainingcourseList:[]
     },
 
@@ -25,7 +26,7 @@ const TrainingCourseSlice = createSlice({
         },
         getCourseByName:(state,action)=>{
             console.log("view by course slice");
-            state.trainingcourseState=action.payload;
+            state.trainingcourse1State=action.payload;
         },
         postCourse:(state,action)=>{
            console.log("posting the training course");

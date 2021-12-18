@@ -1,14 +1,15 @@
 
 import './App.css';
 import Scheme from './components/Scheme';
-import TrainingCourse from './components/TrainingCourse';
+import TrainingCourseComponent from './components/TrainingCourseComponent';
 
 
 const App = () => {
   return (
     <div className="bg-light">
       {/* <Scheme /> */}
-      <TrainingCourse/>
+      <TrainingCourseComponent/>
+    
     </div>
   );
 }
