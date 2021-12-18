@@ -1,4 +1,4 @@
-import {  deleteById, postCourse, updateCourse } from "../redux/TrainingCourseSlice";
+import { deleteById, postCourse, updateCourse } from "../redux/TrainingCourseSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { getCourseByIdService, getAllCoursesService, deleteCourseByIdService, courseByNameService, postCourseService, updateCourseService } from "../service/TrainingCourseServices";
@@ -100,13 +100,14 @@ const TrainingCourseComponent = () => {
     return (
 
         <div>
-             <br/><br/>
-             <h1 className="display-3 text-primary mt-3 mb-3 font-weight-bold text-center" >TrainingCourse Component  </h1>
-             <UserTrainingCourseComponent/>
+
+            <br /><br />
+            <h1 className="display-3 text-primary mt-3 mb-3 font-weight-bold text-center" >TrainingCourse Component  </h1>
+            <UserTrainingCourseComponent />
 
 
             <div className="container">
-                
+
 
                 <div class="accordion" id="accordionExample">
 
@@ -117,7 +118,7 @@ const TrainingCourseComponent = () => {
 
                     {/* -----------delete course by id------------------ */}
 
-                    <div class="card">
+                    <div class="card"  >
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -151,7 +152,7 @@ const TrainingCourseComponent = () => {
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <div className="col-12 border border-light shadow p-3 mb-5 bg-white" id="add">
                                     <h3>Add New Course</h3>
@@ -201,6 +202,7 @@ const TrainingCourseComponent = () => {
                 </div>
 
             </div>
+            
         </div>
     );
 }
